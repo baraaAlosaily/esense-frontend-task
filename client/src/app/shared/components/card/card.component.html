@@ -1,0 +1,10 @@
+<section class="esense-card">
+  <section class="esense-card--title">
+    <p>{{element.name}}</p>
+  </section>
+  <section class="esense-card--buttons">
+    <section class="esense-card--buttons--separator"></section>
+    <app-custom-button (onClick)="editEvent(element)" [text]="'تعديل'" [icon]="'assets/icons/blue-pen.svg'"></app-custom-button>
+    <app-custom-button (onClick)="deleteEvent(element)" [text]="'حذف'" [icon]="'assets/icons/red-trash.svg'"></app-custom-button>
+  </section>
+</section>

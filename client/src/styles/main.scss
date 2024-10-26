@@ -1,0 +1,21 @@
+@import './base/reset';
+@import './base/fonts';
+@import './abstracts/vatiables';
+@import './abstracts/mixins';
+@import './base/typography';
+
+// Components
+@import './components/header';
+@import './components/avatar';
+@import './components/title';
+@import './components/navbar';
+@import './components/dashboard';
+@import './components/sidebar.scss';
+@import './components/custom-button';
+@import './components/text-input';
+@import './components/card';
+@import './components/form';
+@import './components/no-data_found';
+
+// Pages
+@import './pages/client-page';

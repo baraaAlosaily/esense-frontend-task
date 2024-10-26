@@ -1,0 +1,5 @@
+.esense-header{
+  background-color: $primary-300;
+  padding: $spacing-xs 0 $spacing-xs $spacing-xl;
+  @include flex-between-row;
+}

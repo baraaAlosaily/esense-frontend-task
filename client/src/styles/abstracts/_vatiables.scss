@@ -1,0 +1,425 @@
+// Font Family
+$font-family: 'Cairo', sans-serif;
+
+// Font Weight
+$primary-500:#000000;
+$primary-400:#191919;
+$primary-300:#323232;
+$primary-200:#b2b2b2;
+$primary-100:#e5e5e5;
+
+$secondary-500:#e32636;
+$secondary-400:#f26c7d;
+$secondary-300:#f9a3b2;
+$secondary-200:#fcd1d6;
+$secondary-100:#ffe8ec;
+
+$blue-500:#1974d2;
+$blue-400:#a3c7ed;
+$blue-300:#d1e3f6;
+$blue-200:#e8f1fa;
+$blue-100:#f4f8fc;
+
+$white-500:#ffffff;
+$white-400:#f9f9f9;
+$white-300:#f2f2f2;
+$white-200:#e5e5e5;
+$white-100:#cccccc;
+
+//default font size
+$default-font-size: 1rem;
+
+// Font Size
+$font-size-xxs: 0.75rem;
+$font-size-xs: 0.875rem;
+$font-size-sm: 1rem;
+$font-size-md: 1.125rem;
+$font-size-lg: 1.25rem;
+$font-size-xl: 1.5rem;
+$font-size-xxl: 1.875rem;
+$font-size-xxxl: 2.25rem;
+$font-size-xxxxl: 3rem;
+
+// Line Height
+$line-height-xs: 1.25;
+$line-height-sm: 1.5;
+$line-height-md: 1.75;
+$line-height-lg: 2;
+$line-height-xl: 2.25;
+
+// Spacing
+$spacing-xxs: 0.25rem;
+$spacing-xs: 0.5rem;
+$spacing-sm: 0.75rem;
+$spacing-md: 1rem;
+$spacing-lg: 1.5rem;
+$spacing-xl: 2rem;
+$spacing-xxl: 3rem;
+$spacing-xxxl: 4rem;
+$spacing-xxxxl: 6rem;
+
+// Border Radius
+$border-radius-xs: 0.125rem;
+$border-radius-sm: 0.25rem;
+$border-radius-md: 0.5rem;
+$border-radius-lg: 1rem;
+$border-radius-xl: 2rem;
+$border-radius-xxl: 3rem;
+
+
+// Z-Index
+$z-index-1: 10;
+$z-index-2: 20;
+$z-index-3: 30;
+$z-index-4: 40;
+$z-index-5: 50;
+
+// font weight
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+$font-weight-extra-bold: 800;
+$font-weight-black: 900;
+
+
+// // Breakpoints
+// $breakpoint-xs: 0;
+// $breakpoint-sm: 576px;
+// $breakpoint-md: 768px;
+// $breakpoint-lg: 992px;
+// $breakpoint-xl: 1200px;
+// $breakpoint-xxl: 1400px;
+
+// // Media Query
+// @mixin media-query($breakpoint) {
+//   @media (min-width: $breakpoint) {
+//     @content;
+//   }
+// }
+
+// // Responsive Font Size
+// @mixin font-size($size) {
+//   font-size: $size;
+
+//   @include media-query($breakpoint-sm) {
+//     font-size: $size + 0.125rem;
+//   }
+
+//   @include media-query($breakpoint-md) {
+//     font-size: $size + 0.25rem;
+//   }
+
+//   @include media-query($breakpoint-lg) {
+//     font-size: $size + 0.5rem;
+//   }
+
+//   @include media-query($breakpoint-xl) {
+//     font-size: $size + 0.75rem;
+//   }
+
+//   @include media-query($breakpoint-xxl) {
+//     font-size: $size + 1rem;
+//   }
+// }
+
+// // Responsive Line Height
+// @mixin line-height($size) {
+//   line-height: $size;
+
+//   @include media-query($breakpoint-sm) {
+//     line-height: $size + 0.25;
+//   }
+
+//   @include media-query($breakpoint-md) {
+//     line-height: $size + 0.5;
+//   }
+
+//   @include media-query($breakpoint-lg) {
+//     line-height: $size + 0.75;
+//   }
+
+//   @include media-query($breakpoint-xl) {
+//     line-height: $size + 1;
+//   }
+
+//   @include media-query($breakpoint-xxl) {
+//     line-height: $size + 1.25;
+//   }
+// }
+
+
+// // Responsive Spacing
+// @mixin spacing($size) {
+//   padding: $size;
+//   margin: $size;
+
+//   @include media-query($breakpoint-sm) {
+//     padding: $size + 0.25rem;
+//     margin: $size + 0.25rem;
+//   }
+
+//   @include media-query($breakpoint-md) {
+//     padding: $size + 0.5rem;
+//     margin: $size + 0.5rem;
+//   }
+
+//   @include media-query($breakpoint-lg) {
+//     padding: $size + 0.75rem;
+//     margin: $size + 0.75rem;
+//   }
+
+//   @include media-query($breakpoint-xl) {
+//     padding: $size + 1rem;
+//     margin: $size + 1rem;
+//   }
+
+//   @include media-query($breakpoint-xxl) {
+//     padding: $size + 1.25rem;
+//     margin: $size + 1.25rem;
+//   }
+// }
+
+// // Responsive Border Radius
+// @mixin border-radius($size) {
+//   border-radius: $size;
+
+//   @include media-query($breakpoint-sm) {
+//     border-radius: $size + 0.125rem;
+//   }
+
+//   @include media-query($breakpoint-md) {
+//     border-radius: $size + 0.25rem;
+//   }
+
+//   @include media-query($breakpoint-lg) {
+//     border-radius: $size + 0.5rem;
+//   }
+
+//   @include media-query($breakpoint-xl) {
+//     border-radius: $size + 0.75rem;
+//   }
+
+//   @include media-query($breakpoint-xxl) {
+//     border-radius: $size + 1rem;
+//   }
+// }
+
+// // Responsive Z-Index
+// @mixin z-index($size) {
+//   z-index: $size;
+
+//   @include media-query($breakpoint-sm) {
+//     z-index: $size + 10;
+//   }
+
+//   @include media-query($breakpoint-md) {
+//     z-index: $size + 20;
+//   }
+
+//   @include media-query($breakpoint-lg) {
+//     z-index: $size + 30;
+//   }
+
+//   @include media-query($breakpoint-xl) {
+//     z-index: $size + 40;
+//   }
+
+//   @include media-query($breakpoint-xxl) {
+//     z-index: $size + 50;
+//   }
+// }
+
+// // Responsive Breakpoints
+// @mixin breakpoint($size) {
+//   @include media-query($size) {
+//     @content;
+//   }
+// }
+
+// // Responsive Flexbox
+// @mixin flexbox($direction, $justify, $align) {
+//   display: flex;
+//   flex-direction: $direction;
+//   justify-content: $justify;
+//   align-items: $align;
+// }
+
+// // Responsive Flexbox Wrap
+// @mixin flexbox-wrap($wrap) {
+//   flex-wrap: $wrap;
+
+//   @include media-query($breakpoint-sm) {
+//     flex-wrap: $wrap;
+//   }
+
+//   @include media-query($breakpoint-md) {
+//     flex-wrap: $wrap;
+//   }
+
+//   @include media-query($breakpoint-lg) {
+//     flex-wrap: $wrap;
+//   }
+
+//   @include media-query($breakpoint-xl) {
+//     flex-wrap: $wrap;
+//   }
+
+//   @include media-query($breakpoint-xxl) {
+//     flex-wrap: $wrap;
+//   }
+// }
+
+// // Responsive Flexbox Justify Content
+// @mixin flexbox-justify($justify) {
+//   justify-content: $justify;
+
+//   @include media-query($breakpoint-sm) {
+//     justify-content: $justify;
+//   }
+
+//   @include media-query($breakpoint-md) {
+//     justify-content: $justify;
+//   }
+
+//   @include media-query($breakpoint-lg) {
+//     justify-content: $justify;
+//   }
+
+//   @include media-query($breakpoint-xl) {
+//     justify-content: $justify;
+//   }
+
+//   @include media-query($breakpoint-xxl) {
+//     justify-content: $justify;
+//   }
+// }
+
+// // Responsive Flexbox Align Items
+// @mixin flexbox-align($align) {
+//   align-items: $align;
+
+//   @include media-query($breakpoint-sm) {
+//     align-items: $align;
+//   }
+
+//   @include media-query($breakpoint-md) {
+//     align-items: $align;
+//   }
+
+//   @include media-query($breakpoint-lg) {
+//     align-items: $align;
+//   }
+
+//   @include media-query($breakpoint-xl) {
+//     align-items: $align;
+//   }
+
+//   @include media-query($breakpoint-xxl) {
+//     align-items: $align;
+//   }
+// }
+
+// // Responsive Flexbox Align Content
+// @mixin flexbox-align-content($align) {
+//   align-content: $align;
+
+//   @include media-query($breakpoint-sm) {
+//     align-content: $align;
+//   }
+
+//   @include media-query($breakpoint-md) {
+//     align-content: $align;
+//   }
+
+//   @include media-query($breakpoint-lg) {
+//     align-content: $align;
+//   }
+
+//   @include media-query($breakpoint-xl) {
+//     align-content: $align;
+//   }
+
+//   @include media-query($breakpoint-xxl) {
+//     align-content: $align;
+//   }
+// }
+
+// // Responsive Flexbox Align Self
+// @mixin flexbox-align-self($align) {
+//   align-self: $align;
+
+//   @include media-query($breakpoint-sm) {
+//     align-self: $align;
+//   }
+
+//   @include media-query($breakpoint-md) {
+//     align-self: $align;
+//   }
+
+//   @include media-query($breakpoint-lg) {
+//     align-self: $align;
+//   }
+
+//   @include media-query($breakpoint-xl) {
+//     align-self: $align;
+//   }
+
+//   @include media-query($breakpoint-xxl) {
+//     align-self: $align;
+//   }
+// }
+
+// // Responsive Flexbox Order
+// @mixin flexbox-order($order) {
+//   order: $order;
+
+//   @include media-query($breakpoint-sm) {
+//     order: $order;
+//   }
+
+//   @include media-query($breakpoint-md) {
+//     order: $order;
+//   }
+
+//   @include media-query($breakpoint-lg) {
+//     order: $order;
+//   }
+
+//   @include media-query($breakpoint-xl) {
+//     order: $order;
+//   }
+
+//   @include media-query($breakpoint-xxl) {
+//     order: $order;
+//   }
+// }
+
+// // Responsive Flexbox Grow
+// @mixin flexbox-grow($grow) {
+//   flex-grow: $grow;
+
+//   @include media-query($breakpoint-sm) {
+//     flex-grow: $grow;
+//   }
+
+//   @include media-query($breakpoint-md) {
+//     flex-grow: $grow;
+//   }
+
+//   @include media-query($breakpoint-lg) {
+//     flex-grow: $grow;
+//   }
+
+//   @include media-query($breakpoint-xl) {
+//     flex-grow: $grow;
+//   }
+
+//   @include media-query($breakpoint-xxl) {
+//     flex-grow: $grow;
+//   }
+// }
+
+
+

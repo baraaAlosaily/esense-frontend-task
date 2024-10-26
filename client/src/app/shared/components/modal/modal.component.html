@@ -1,0 +1,29 @@
+<section class="esense-form" *ngIf="modalTitle">
+  <section class="esense-form__container" >
+    <section class="esense-form__header">
+      <p class="esense-form__header--title">{{modalTitle}}</p>
+      <section>
+        <app-custom-button (onClick)="closeModalEvent()" [icon]="'assets/icons/close.svg'"></app-custom-button>
+      </section>
+    </section>
+    <section class="esense-form__body">
+      <form [formGroup]="nameForm" class="esense-form__body--form">
+        <div class="esense-form__body--form--input">
+          <label for="name">الإسم<span class="error">{{' '}}*</span></label>
+          <input id="name" type="text" formControlName="name">
+          <div *ngIf="nameForm.get('name')?.invalid && nameForm.get('name')?.touched">
+            <small class="error" *ngIf="nameForm.get('name')?.errors?.['required']">هذا الحقل مطلوب</small>
+          </div>
+        </div>
+        <div class="esense-form__body--form--input">
+          <label for="description">التفاصيل</label>
+          <input id="description" type="description" formControlName="description">
+        </div>
+      </form>
+    </section>
+    <section class="esense-form__footer">
+      <app-custom-button [style]="'border blue width-150 padding-md'" (onClick)="saveEvent(modalTitle)" [text]="'حفظ'" ></app-custom-button>
+      <app-custom-button [style]="'border width-150 padding-md'" (onClick)="closeModalEvent()" [text]="'إلغاء'"></app-custom-button>
+    </section>
+  </section>
+</section>

@@ -1,0 +1,29 @@
+.esense-navbar{
+  background-color: $primary-500;
+  color: $primary-200;
+  padding: 0px $spacing-xxs ;
+  font-size: $font-size-xs;
+  font-weight: $font-weight-semi-bold;
+
+  @include flex-end-row;
+  &__list{
+    @include flex-end-row;
+  }
+  &__item{
+    cursor: pointer;
+    padding: $spacing-sm $spacing-lg;
+    &:hover{
+      background-color: $primary-400;
+    }
+    border-bottom: 5px solid transparent;
+    &.active{
+      border-bottom: 4px solid $white-500;
+      color: $white-500;
+      background-color: $primary-400;
+    }
+  }
+  &__link{
+    color: $primary-200;
+    text-decoration: none;
+  }
+}

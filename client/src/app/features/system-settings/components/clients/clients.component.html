@@ -1,0 +1,24 @@
+<section class="client-page">
+  <section class="client-page__header">
+    <section class="client-page__header--container">
+      <app-custom-button (onClick)="openAddModal()" [text]="'اضافة'" [icon]="'assets/icons/plus.svg'"></app-custom-button>
+      <app-text-input (inputValueChange)="searchInputChange($event)" ></app-text-input>
+    </section>
+  </section>
+  <section class="client-page__content">
+    <section *ngIf="($elements|async)?.length!==0" class="client-page__content--container">
+      @for (element of $elements|async; track $index) {
+        <app-card class="client-page__content--container--element" [element]="element" (allActions)="allActions($event)"></app-card>
+      }
+    </section>
+    @if(($elements|async)?.length===0) {
+      <section class="client-page__content--no-data">
+        <app-no-data-found [message]="'لا يوجد بيانات'" [image]="'assets/images/no-data.svg'"></app-no-data-found>
+      </section>
+    }
+  </section>
+</section>
+
+<app-modal [modalTitle]="modalTitle" [nameForm]="nameForm"  (allActions)="allActions($event)"></app-modal>
+
+

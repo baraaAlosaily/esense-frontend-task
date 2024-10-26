@@ -1,0 +1,55 @@
+// flex
+
+@mixin flex-between-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-end-row {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+@mixin flex-center-row($gap: 0) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: $gap;
+}
+
+@mixin flex-center-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-center-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@mixin flex-start-end-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: end;
+}
+
+@mixin flex-end-row {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+@mixin flex-start-column{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}

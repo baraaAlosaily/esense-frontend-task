@@ -1,0 +1,37 @@
+.esense-custom-button{
+  cursor: pointer;
+  &--container{
+    @include flex-center-row;
+    gap: $spacing-xxs;
+    padding: $spacing-xxs $spacing-xs;
+    &--img{
+      width: $spacing-lg;
+      height: $spacing-lg;
+      font-weight: $font-weight-bold;
+    }
+    &--text{
+      font-size: $font-size-xs;
+      font-weight: $font-weight-semi-bold;
+      color: $primary-300;
+    }
+    &.border{
+      padding: $spacing-xxs $spacing-xs;
+      border: 1px solid $primary-200;
+    }
+    &.blue{
+      background-color: $blue-500;
+      p{
+        color: $white-500;
+      }
+    }
+    &.width-150{
+      width: 150px;
+    }
+    &.padding-md{
+      padding: $spacing-xs !important;
+    }
+    &:hover{
+      background-color: $blue-300;
+    }
+  }
+}

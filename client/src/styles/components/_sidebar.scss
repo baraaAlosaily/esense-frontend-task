@@ -1,0 +1,50 @@
+.esense-sidebar{
+  @include flex-start-end-column;
+  background-color: $primary-100;
+  height: calc(100vh - 90px);
+  width: 250px;
+  &--title{
+    font-size: $font-size-xs;
+    font-weight: $font-weight-semi-bold;
+    color: $primary-500;
+    text-align: end;
+    padding: $spacing-md $spacing-lg;
+  }
+  &__list{
+    width: 250px;
+    @include flex-start-end-column;
+  }
+  &__item{
+    width: 100%;
+    cursor: pointer;
+    a{
+      text-decoration: none;
+    }
+  }
+  &__link{
+    padding: $spacing-md $spacing-lg;
+    color: $primary-200;
+    text-decoration: none;
+    text-align: end;
+    font-size: $font-size-xs;
+    border-right: 3px solid transparent;
+    p{
+      font-size: $font-size-xs;
+      font-weight: $font-weight-semi-bold;
+      line-height: 1.5;
+    }
+    a{
+      color: $primary-200;
+      text-decoration: none;
+      line-height: $line-height-md;
+    }
+    &:hover{
+      background-color: $blue-200;
+    }
+    &.active{
+      background-color: $blue-200;
+      border-right: 3px solid $blue-500;
+    }
+  }
+
+}

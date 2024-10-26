@@ -1,0 +1,17 @@
+<section class="esense-dashboard">
+  <router-outlet></router-outlet>
+  <section class="esense-sidebar">
+    <p class="esense-sidebar--title">{{'ادارة المعاملات'}}</p>
+    <ul class="esense-sidebar__list">
+      @for (route of subRoute; track $index) {
+        <li class="esense-sidebar__item">
+          <a routerLink="{{route.path}}" routerLinkActive="active">
+            <section [ngClass]="{'active': isActiveRoute(route.path)}" class="esense-sidebar__link">
+              <p>{{route.title}}</p>
+            </section>
+          </a>
+        </li>
+      }
+    </ul>
+  </section>
+</section>

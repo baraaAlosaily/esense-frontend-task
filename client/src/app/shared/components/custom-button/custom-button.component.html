@@ -1,0 +1,10 @@
+<section (click)="handleClick()" class="esense-custom-button">
+  <section [ngClass]="style"  class="esense-custom-button--container">
+    @if(text) {
+      <p class="esense-custom-button--container--text">{{text}}</p>
+    }
+    @if (icon) {
+      <img class="esense-custom-button--container--img" src="{{icon}}" alt="icon" />
+    }
+  </section>
+</section>

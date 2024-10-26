@@ -1,0 +1,19 @@
+.esense-text-input {
+  text-align: right;
+  direction: rtl;
+  height: $spacing-lg;
+  width: calc($spacing-lg*10);
+  border: 1px solid $primary-200;
+  padding-right: $spacing-xs;
+  font-family: 'Cairo', sans-serif;
+}
+
+.esense-text-input:focus {
+  outline: none;
+  border: 1px solid $primary-500;
+}
+
+.esense-text-input::placeholder {
+  color: $primary-100;
+  font-family: 'Cairo', sans-serif;
+}

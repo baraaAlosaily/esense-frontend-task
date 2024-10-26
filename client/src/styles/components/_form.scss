@@ -1,0 +1,82 @@
+.esense-form{
+  position: absolute;
+  top: 0;
+  direction: rtl;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__container{
+    @include flex-center-column;
+    width: 600px;
+    border: 1px solid $primary-500;
+  }
+  &__header{
+    width: 100%;
+    background-color: $white-500;
+    @include flex-between-row;
+    &--title{
+      font-size: $font-size-md;
+      font-weight: $font-weight-semi-bold;
+      color: $primary-500;
+      padding: $spacing-sm $spacing-sm;
+    }
+  }
+  &__body{
+    width: 100%;
+    background-color: $primary-100;
+    @include flex-center-column;
+    gap: $spacing-xs;
+    align-items: flex-start;
+    &--form{
+      font-size: $font-size-xs;
+      font-weight: $font-weight-semi-bold;
+      padding: $spacing-md $spacing-md;
+      color: $primary-300;
+      width: 100%;
+      &--input{
+        width: calc(100% - $spacing-md*5);
+        @include flex-center-column;
+        gap: $spacing-xs;
+        align-items: flex-start;
+        padding: $spacing-md $spacing-md;
+        &--label{
+          font-size: $font-size-xs;
+          font-weight: $font-weight-semi-bold;
+          color: $primary-500;
+        }
+        input{
+          width: 100%;
+          height: $spacing-lg;
+          padding-right: $spacing-xs;
+          font-family: 'Cairo', sans-serif;
+          font-size: $font-size-xs;
+          font-weight: $font-weight-semi-bold;
+          color: $primary-500;
+          border: 1px solid $primary-200;
+        }
+        input:focus{
+          outline: none;
+          border: 1px solid $primary-500;
+        }
+        input::placeholder{
+          color: $primary-100;
+          font-family: 'Cairo', sans-serif;
+        }
+        .error{
+          color: $secondary-500;
+          font-size: $font-size-xxs;
+        }
+      }
+    }
+  }
+  &__footer{
+    width: 100%;
+    background-color: $white-500;
+    padding: $spacing-sm 0px;
+    @include flex-center-row;
+    gap: $spacing-xs;
+  }
+}

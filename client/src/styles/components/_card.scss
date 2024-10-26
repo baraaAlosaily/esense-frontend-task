@@ -1,0 +1,17 @@
+.esense-card{
+  @include flex-between-row ;
+  padding: $spacing-xs;
+  font-size: $font-size-xs;
+  color: $primary-500;
+  font-weight: $font-weight-semi-bold;
+  direction: rtl;
+  border: 2px solid $primary-100;
+  &--buttons{
+    @include flex-center-row;
+    gap: $spacing-xs;
+    &--separator{
+      height: $spacing-lg;
+      border: 1px solid $primary-100;
+    }
+  }
+}

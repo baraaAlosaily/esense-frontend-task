@@ -1,0 +1,13 @@
+<nav class="esense-navbar">
+  <ul class="esense-navbar__list">
+    @for (route of mainRoutes; track $index) {
+      <li>
+        <a class="esense-navbar__link" routerLink="{{route.path}}" routerLinkActive="active">
+          <section [ngClass]="{'active': isActiveRoute(route.path)}" class="esense-navbar__item">
+            <p>{{route.title}}</p>
+          </section>
+        </a>
+      </li>
+    }
+  </ul>
+</nav>

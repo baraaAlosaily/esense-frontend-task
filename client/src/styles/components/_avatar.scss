@@ -1,0 +1,13 @@
+.esense-avatar{
+  @include flex-center-row($spacing-xs);
+  &__img{
+    width: 25px;
+    height: 25px;
+    border-radius: $border-radius-sm;
+  }
+  &__name{
+    font-size: $font-size-xs;
+    font-weight: $font-weight-semi-bold;
+    color: $primary-200;
+  }
+}

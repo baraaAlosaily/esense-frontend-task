@@ -1,0 +1,12 @@
+.esense-no-data-found{
+  @include flex-center-column;
+  height: calc(100vh - 162px);
+  color: $blue-500;
+  font-size: $font-size-xl;
+  font-weight: $font-weight-semi-bold;
+  gap: $spacing-lg;
+  img{
+    width: 200px;
+    height: 200px;
+  }
+}
